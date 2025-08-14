@@ -1,10 +1,10 @@
 import { Client, GatewayIntentBits } from "discord.js";
 import ModuleCommandRegister from "./commands/registers/moduleCommandRegister";
-import YouTubeiPlayer from "./music/youTubeiDiscordPlayer";
 import { AppConfig } from "./config";
 import { logger } from "./loggers";
 import "./events";
 import "./extensions/discordClient"
+import VKMusicPlayer from "./music/vkMusicPlayer";
 
 try {
     const config = await AppConfig.get();
@@ -22,7 +22,7 @@ try {
         ]
     });
 
-    const musicPlayer = await (new YouTubeiPlayer(client, config.player!))
+    const musicPlayer = await (new VKMusicPlayer(client, config.player!))
         .loadExtractors();
 
     client

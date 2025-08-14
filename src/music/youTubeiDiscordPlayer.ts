@@ -15,7 +15,7 @@ export default class YouTubeiPlayer extends DiscordPlayer {
 
     protected async registerExtractors(): Promise<void> {
         await this._player.extractors.register(YoutubeiExtractor, {
-            cookie: this._playerConfig.cookies,
+            cookie: this._playerConfig.cookies.youtubei,
             generateWithPoToken: true,
             streamOptions: {
                 useClient: 'WEB',

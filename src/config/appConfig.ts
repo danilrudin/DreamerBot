@@ -62,5 +62,10 @@ export interface IChannelConfig {
 }
 
 export interface IMusicPlayerConfig {
-    cookies: string;
+	tokens: {
+		vkmusic: string;
+	};
+	cookies: {
+		youtubei: string;
+	};
 }

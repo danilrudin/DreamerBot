@@ -10,6 +10,11 @@
         "userLeft": ""
     },
     "player": {
-        "cookies": ""
+        "tokens": {
+            "vkmusic": ""
+        },
+        "cookies": {
+            "youtubei": ""
+        }
     }
 }
