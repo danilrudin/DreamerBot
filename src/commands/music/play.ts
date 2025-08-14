@@ -97,6 +97,13 @@ export default {
 } satisfies Command;
 
 function formatTrackName(track: { title: string; author: string; duration: string }): string {
-    const shortenedTitle = track.title.length > 50 ? track.title.slice(0, 50) + "..." : track.title;
-    return `${shortenedTitle} - ${track.author} | ${track.duration}`;
+	const maxLength = 45;
+
+	const shorten = (text: string) =>
+		text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+
+	const shortenedTitle = shorten(track.title);
+	const shortenedAuthor = shorten(track.author);
+
+	return `${shortenedTitle} - ${shortenedAuthor} | ${track.duration}`;
 }
