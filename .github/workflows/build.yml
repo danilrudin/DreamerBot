@@ -1,18 +1,53 @@
-name: Scan
+name: Build
+
 on:
   push:
-    branches: [ "master" ]
-    pull_request:
-      branches: [ "master" ]
+    branches: [ master ]
+    tags:
+      - 'v*.*.*'
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  sonarqube:
-    name: SonarQube
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
-          fetch-depth: 0
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v4
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          version: 9
+
+      - name: Setup Node.js 22.15
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.15.0'
+          cache: 'pnpm'
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Build (tsup)
+        run: pnpm build
+
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: |
+            dist/**
+            package.json
+            package-lock.json
+            pnpm-lock.yaml
+          if-no-files-found: error
