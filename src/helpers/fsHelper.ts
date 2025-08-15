@@ -1,10 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { FileExtension } from '../constants';
+import { FileExtension } from '../constants.js';
+import { pathToFileURL } from 'node:url';
+
+const toJsIfTs = (p: string) => p.replace(/\.ts$/i, '.js');
 
 export async function getModules(directory: string): Promise<any[]> {
-    const files = await getFiles(directory, FileExtension.modules, true);
-    return await Promise.all(files.map(async f => await import(f)));
+	const files = await getFiles(directory, FileExtension.modules, true);
+
+	return await Promise.all(
+		files.map((f) => import(pathToFileURL(toJsIfTs(f)).href))
+	);
 }
 
 export async function getFiles(directory: string, extensions: string[], recursive: boolean = false) {

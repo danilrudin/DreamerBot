@@ -1,11 +1,11 @@
 import { GuildQueueEvent } from "discord-player";
 import { EmbedBuilder } from "discord.js";
-import { Customization } from "../../constants";
-import { getServerInfoFooter } from "../../helpers/formatHelper";
-import { getLocalization } from "../../helpers/localizationHelper";
-import { IDiscordPlayerGuildQueueErrorHandler } from "../types/discordPlayerEventTypes";
-import { getChannelByQueueMetadata, getLocaleByQueueMetadata } from "../../helpers/discordPlayerHelper";
-import { logger } from "../../loggers";
+import { Customization } from "../../constants.js";
+import { getServerInfoFooter } from "../../helpers/formatHelper.js";
+import { getLocalization } from "../../helpers/localizationHelper.js";
+import { IDiscordPlayerGuildQueueErrorHandler } from "../types/discordPlayerEventTypes.js";
+import { getChannelByQueueMetadata, getLocaleByQueueMetadata } from "../../helpers/discordPlayerHelper.js";
+import { logger } from "../../loggers/index.js";
 
 export const errorEventHandlers: IDiscordPlayerGuildQueueErrorHandler[] = [
     {

@@ -8,15 +8,15 @@ import {
     ButtonBuilder,
     ButtonStyle
 } from "discord.js";
-import { Command } from "../command";
-import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper";
-import { isUserNotInVoiceChannel, getGuildMember, getBaseGuildTextChannel, getGuildMemberLocale, getGuildId } from "../../helpers/interactionHelper";
-import { PlayerState } from "../../music/musicPlayer";
-import { DiscordPlayer } from "../../music/discordPlayer";
-import { ApiResponse, Customization, MusicPlayerSettings } from "../../constants";
+import { Command } from "../command.js";
+import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper.js";
+import { isUserNotInVoiceChannel, getGuildMember, getBaseGuildTextChannel, getGuildMemberLocale, getGuildId } from "../../helpers/interactionHelper.js";
+import { PlayerState } from "../../music/musicPlayer.js";
+import { DiscordPlayer } from "../../music/discordPlayer.js";
+import { ApiResponse, Customization, MusicPlayerSettings } from "../../constants.js";
 import { Track } from "discord-player";
-import { getTrackDescription, getTrackMetadataFields } from "../../helpers/discordPlayerHelper";
-import { L } from "../../localizations/i18n/i18n-node";
+import { getTrackDescription, getTrackMetadataFields } from "../../helpers/discordPlayerHelper.js";
+import { L } from "../../localizations/i18n/i18n-node.js";
 
 const defaultCommandLocalization = getDefaultLocalization().music.queue;
 const nextPageSelectorId = 'next-page';

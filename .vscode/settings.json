@@ -1,11 +1,13 @@
 {
-    "bun.runtime": "node_modules/bun/bin/bun.exe",
-    // If support for Bun should be added to the default "JavaScript Debug Terminal".
-    "bun.debugTerminal.enabled": true,
-    // If the debugger should stop on the first line of the program.
-    "bun.debugTerminal.stopOnEntry": false,
-    "files.exclude": {
-        "**/.git": true,
-        "**/node_modules": true
-    }
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.exclude": {
+    "dist": true
+  },
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.defaultFormatter": null
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": null
+  }
 }

@@ -1,6 +1,6 @@
 import log4js from "log4js";
-import { ILogger } from "./logger";
-import { Path } from "../constants";
+import { ILogger } from "./logger.js";
+import { Path } from "../constants.js";
 
 log4js.configure(Path.log4jsConfig);
 

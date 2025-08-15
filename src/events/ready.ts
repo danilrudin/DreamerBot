@@ -1,5 +1,5 @@
 import { Client, Events } from "discord.js";
-import { logger } from "../loggers";
+import { logger } from "../loggers/index.js";
 
 export default (client: Client): void => {
     client.once(Events.ClientReady, () => {

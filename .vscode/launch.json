@@ -1,25 +1,29 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "bun",
-      "internalConsoleOptions": "neverOpen",
-      "request": "launch",
-      "name": "Debug File",
-      "program": "./src/index.ts",
-      "cwd": "${workspaceFolder}",
-      "stopOnEntry": false,
-      "watchMode": false
-    },
-    {
-      "type": "bun",
-      "internalConsoleOptions": "neverOpen",
-      "request": "launch",
-      "name": "Run File",
-      "program": "${workspaceFolder}",
-      "cwd": "${workspaceFolder}",
-      "noDebug": true,
-      "watchMode": false
-    }
-  ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Bot (build)",
+			"program": "${workspaceFolder}/dist/index.js",
+			"preLaunchTask": "tsup: build",
+			"cwd": "${workspaceFolder}",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js"],
+			"sourceMaps": true,
+			"smartStep": true,
+			"skipFiles": ["<node_internals>/**"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Bot (watch)",
+			"program": "${workspaceFolder}/dist/index.js",
+			"preLaunchTask": "tsup: dev",
+			"cwd": "${workspaceFolder}",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js"],
+			"sourceMaps": true,
+			"smartStep": true,
+			"skipFiles": ["<node_internals>/**"]
+		}
+	]
 }

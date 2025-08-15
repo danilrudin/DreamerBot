@@ -1,5 +1,5 @@
 import { GuildQueue, GuildQueueEvent, PlayerEvent, Track } from "discord-player";
-import { IQueueMetadata } from "./discordPlayerMetadataTypes";
+import { IQueueMetadata } from "./discordPlayerMetadataTypes.js";
 
 export interface IDiscordPlayerEventHandler {
     event: PlayerEvent;

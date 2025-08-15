@@ -6,13 +6,13 @@ import {
     PermissionFlagsBits,
     SlashCommandBuilder 
 } from "discord.js";
-import { Command } from "../command";
-import { getDefaultLocalization, getLocalization, generateLocalizations } from "../../helpers/localizationHelper";
-import { isUserNotInVoiceChannel, getGuildMember, getGuildMemberLocale, getGuild, getGuildId } from "../../helpers/interactionHelper";
-import { PlayerState, RepeatMode } from "../../music/musicPlayer";
-import { Customization } from "../../constants";
-import { getServerInfoFooter } from "../../helpers/formatHelper";
-import { DiscordPlayer } from "../../music/discordPlayer";
+import { Command } from "../command.js";
+import { getDefaultLocalization, getLocalization, generateLocalizations } from "../../helpers/localizationHelper.js";
+import { isUserNotInVoiceChannel, getGuildMember, getGuildMemberLocale, getGuild, getGuildId } from "../../helpers/interactionHelper.js";
+import { PlayerState, RepeatMode } from "../../music/musicPlayer.js";
+import { Customization } from "../../constants.js";
+import { getServerInfoFooter } from "../../helpers/formatHelper.js";
+import { DiscordPlayer } from "../../music/discordPlayer.js";
 
 const defaultCommandLocalization = getDefaultLocalization().music.repeat;
 

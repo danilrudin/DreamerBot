@@ -1,7 +1,7 @@
 import { Locale } from "discord.js";
-import L from "../localizations/i18n/i18n-node";
-import { baseLocale, locales } from "../localizations/i18n/i18n-util";
-import { Locales, TranslationFunctions } from "../localizations/i18n/i18n-types";
+import L from "../localizations/i18n/i18n-node.js";
+import { baseLocale, locales } from "../localizations/i18n/i18n-util.js";
+import { Locales, TranslationFunctions } from "../localizations/i18n/i18n-types.js";
 
 export function getLocalization(locale: Locale): typeof L[keyof typeof L] {
     const matchedLocale = locales.find(l => l === locale);

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { Path } from '../constants';
+import { Path } from '../constants.js';
 import { Snowflake } from 'discord.js';
 
 export class AppConfig {

@@ -1,17 +1,17 @@
 import { GuildQueueEvent, Track } from "discord-player";
 import { EmbedBuilder } from "discord.js";
-import { Customization } from '../../constants';
-import { getLocalization } from "../../helpers/localizationHelper";
-import { getServerInfoFooter } from "../../helpers/formatHelper";
-import { IDiscordPlayerGuildQueueTrackEventHandler } from "../types/discordPlayerEventTypes";
+import { Customization } from '../../constants.js';
+import { getLocalization } from "../../helpers/localizationHelper.js";
+import { getServerInfoFooter } from "../../helpers/formatHelper.js";
+import { IDiscordPlayerGuildQueueTrackEventHandler } from "../types/discordPlayerEventTypes.js";
 import { 
     getChannelByQueueMetadata, 
     getLocaleByQueueMetadata, 
     getTrackDescription, 
     getTrackMetadataFields, 
     getTrackThumbnail 
-} from "../../helpers/discordPlayerHelper";
-import L from "../../localizations/i18n/i18n-node";
+} from "../../helpers/discordPlayerHelper.js";
+import L from "../../localizations/i18n/i18n-node.js";
 
 export const trackEventHandlers: IDiscordPlayerGuildQueueTrackEventHandler[] = [
     {

@@ -1,11 +1,11 @@
 import { Client, Interaction } from "discord.js";
 import { GuildQueue, Player, Track } from "discord-player";
-import { IMusicPlayer, PlayerState, RepeatMode } from "./musicPlayer";
-import { trackEventHandlers } from "./handlers/discordPlayerTrackEventHandler";
-import { errorEventHandlers } from "./handlers/discordPlayerErrorEventHandler";
-import { debugEventHandlers, debugQueueEventHandlers } from "./handlers/discordPlayerDebugEventHandler";
-import { getTrackThumbnail } from "../helpers/discordPlayerHelper";
-import { IQueueMetadata } from "./types/discordPlayerMetadataTypes";
+import { IMusicPlayer, PlayerState, RepeatMode } from "./musicPlayer.js";
+import { trackEventHandlers } from "./handlers/discordPlayerTrackEventHandler.js";
+import { errorEventHandlers } from "./handlers/discordPlayerErrorEventHandler.js";
+import { debugEventHandlers, debugQueueEventHandlers } from "./handlers/discordPlayerDebugEventHandler.js";
+import { getTrackThumbnail } from "../helpers/discordPlayerHelper.js";
+import { IQueueMetadata } from "./types/discordPlayerMetadataTypes.js";
 import { 
     getBaseGuildTextChannel, 
     getBotAsGuildMember, 
@@ -15,8 +15,8 @@ import {
     getGuildMember, 
     getGuildMemberLocale, 
     isUserNotInSameVoiceChannelAsBot 
-} from "../helpers/interactionHelper";
-import { MusicPlayerSettings } from "../constants";
+} from "../helpers/interactionHelper.js";
+import { MusicPlayerSettings } from "../constants.js";
 
 export abstract class DiscordPlayer implements IMusicPlayer<Track, GuildQueue<IQueueMetadata>> {
     private static readonly playerStateValues = new Set(Object.values(PlayerState));

@@ -6,16 +6,16 @@ import {
     PermissionFlagsBits,
     SlashCommandBuilder 
 } from "discord.js";
-import { Command } from "../command";
-import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper";
-import { isUserNotInVoiceChannel, getGuildMember, getGuildId, getGuildMemberLocale, getGuild } from "../../helpers/interactionHelper";
-import { PlayerState } from "../../music/musicPlayer";
-import { DiscordPlayer } from "../../music/discordPlayer";
-import { getServerInfoFooter } from "../../helpers/formatHelper";
-import { Customization } from "../../constants";
-import { getTrackDescription, getTrackMetadataFields, getTrackThumbnail } from "../../helpers/discordPlayerHelper";
+import { Command } from "../command.js";
+import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper.js";
+import { isUserNotInVoiceChannel, getGuildMember, getGuildId, getGuildMemberLocale, getGuild } from "../../helpers/interactionHelper.js";
+import { PlayerState } from "../../music/musicPlayer.js";
+import { DiscordPlayer } from "../../music/discordPlayer.js";
+import { getServerInfoFooter } from "../../helpers/formatHelper.js";
+import { Customization } from "../../constants.js";
+import { getTrackDescription, getTrackMetadataFields, getTrackThumbnail } from "../../helpers/discordPlayerHelper.js";
 import { Track } from "discord-player";
-import { L } from "../../localizations/i18n/i18n-node";
+import { L } from "../../localizations/i18n/i18n-node.js";
 
 const defaultCommandLocalization = getDefaultLocalization().music.pause;
 

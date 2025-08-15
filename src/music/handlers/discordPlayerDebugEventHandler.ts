@@ -1,7 +1,7 @@
 import { GuildQueue, GuildQueueEvent, PlayerEvent } from "discord-player";
-import { IDiscordPlayerDebugHandler, IDiscordPlayerGuildQueueDebugHandler } from "../types/discordPlayerEventTypes";
-import { IQueueMetadata } from "../types/discordPlayerMetadataTypes";
-import { logger } from "../../loggers";
+import { IDiscordPlayerDebugHandler, IDiscordPlayerGuildQueueDebugHandler } from "../types/discordPlayerEventTypes.js";
+import { IQueueMetadata } from "../types/discordPlayerMetadataTypes.js";
+import { logger } from "../../loggers/index.js";
 
 export const debugEventHandlers: IDiscordPlayerDebugHandler[] = [
     {

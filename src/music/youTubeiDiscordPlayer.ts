@@ -1,6 +1,6 @@
-import { DiscordPlayer } from "./discordPlayer";
+import { DiscordPlayer } from "./discordPlayer.js";
 import { YoutubeiExtractor } from "discord-player-youtubei";
-import { MusicPlayerSettings } from "../constants";
+import { MusicPlayerSettings } from "../constants.js";
 import { IMusicPlayerConfig } from "../config";
 import { Client } from "discord.js";
 

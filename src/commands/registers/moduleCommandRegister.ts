@@ -1,9 +1,9 @@
 import { Collection, REST, Routes, Snowflake } from 'discord.js';
-import ICommandRegister from "./commandRegister";
-import { IAuthConfig, IRegisterConfig } from '../../config';
-import { Command, isCommand } from '../command';
-import { Path } from "../../constants";
-import { getModules } from '../../helpers/fsHelper';
+import ICommandRegister from "./commandRegister.js";
+import { IAuthConfig, IRegisterConfig } from '../../config/index.js';
+import { Command, isCommand } from '../command.js';
+import { Path } from "../../constants.js";
+import { getModules } from '../../helpers/fsHelper.js';
 
 export default class ModuleCommandRegister implements ICommandRegister {
     private readonly _rest: REST;

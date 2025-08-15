@@ -1,7 +1,7 @@
 import { Interaction, Client, Events } from "discord.js";
-import { getLocalization } from "../helpers/localizationHelper";
-import { getGuildMemberLocale } from "../helpers/interactionHelper";
-import { logger } from "../loggers";
+import { getLocalization } from "../helpers/localizationHelper.js";
+import { getGuildMemberLocale } from "../helpers/interactionHelper.js";
+import { logger } from "../loggers/index.js";
 
 export default (client: Client): void => {
     client.on(Events.InteractionCreate, async (interaction: Interaction) => {

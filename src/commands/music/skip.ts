@@ -4,11 +4,11 @@ import {
     PermissionFlagsBits,
     SlashCommandBuilder 
 } from "discord.js";
-import { Command } from "../command";
-import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper";
-import { isUserNotInVoiceChannel, getGuildMember, getGuildMemberLocale } from "../../helpers/interactionHelper";
-import { PlayerState } from "../../music/musicPlayer";
-import { DiscordPlayer } from "../../music/discordPlayer";
+import { Command } from "../command.js";
+import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper.js";
+import { isUserNotInVoiceChannel, getGuildMember, getGuildMemberLocale } from "../../helpers/interactionHelper.js";
+import { PlayerState } from "../../music/musicPlayer.js";
+import { DiscordPlayer } from "../../music/discordPlayer.js";
 
 const defaultCommandLocalization = getDefaultLocalization().music.skip;
 

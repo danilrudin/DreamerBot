@@ -1,7 +1,7 @@
 import { BaseGuildTextChannel, Client, EmbedBuilder, Events } from "discord.js";
-import { getLocalization } from "../helpers/localizationHelper";
-import { getServerInfoFooter } from "../helpers/formatHelper";
-import { logger } from "../loggers";
+import { getLocalization } from "../helpers/localizationHelper.js";
+import { getServerInfoFooter } from "../helpers/formatHelper.js";
+import { logger } from "../loggers/index.js";
 
 export default (client: Client): void => {
     client.on(Events.GuildMemberAdd, async mbr => {

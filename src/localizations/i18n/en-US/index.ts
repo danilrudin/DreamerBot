@@ -1,5 +1,5 @@
-import { ApiRestriction } from '../../../constants'
-import type { BaseTranslation } from '../i18n-types'
+import { ApiRestriction } from '../../../constants.js'
+import type { BaseTranslation } from '../i18n-types.js'
 
 const en_US = {
     misc: {

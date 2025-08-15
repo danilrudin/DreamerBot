@@ -9,13 +9,13 @@ import {
     StringSelectMenuBuilder
 } from "discord.js";
 import path from "node:path";
-import { TranslationFunctions } from "../../localizations/i18n/i18n-types";
-import { Command, isCommand } from "../command";
-import { hasPermissions } from "../../helpers/permissionHelper"
-import { getDirectories, getModules } from "../../helpers/fsHelper";
-import { getBaseGuildTextChannel, getGuildMemberLocale, getMemberPermissions } from "../../helpers/interactionHelper";
-import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper";
-import { Path, ApiRestriction, ApiResponse } from "../../constants";
+import { TranslationFunctions } from "../../localizations/i18n/i18n-types.js";
+import { Command, isCommand } from "../command.js";
+import { hasPermissions } from "../../helpers/permissionHelper.js"
+import { getDirectories, getModules } from "../../helpers/fsHelper.js";
+import { getBaseGuildTextChannel, getGuildMemberLocale, getMemberPermissions } from "../../helpers/interactionHelper.js";
+import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper.js";
+import { Path, ApiRestriction, ApiResponse } from "../../constants.js";
 
 const defaultCommandLocalization = getDefaultLocalization().misc.help;
 const helpCategorySelectorId = 'help-category-selector';

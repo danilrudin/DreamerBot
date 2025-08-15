@@ -5,11 +5,11 @@ import {
     PermissionFlagsBits,
     SlashCommandBuilder 
 } from "discord.js";
-import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper";
-import { Command } from "../command";
-import { Customization, ApiRestriction } from "../../constants";
-import { getBaseGuildTextChannel, getGuildMemberLocale } from "../../helpers/interactionHelper";
-import { getServerInfoFooter } from "../../helpers/formatHelper";
+import { getLocalization, generateLocalizations, getDefaultLocalization } from "../../helpers/localizationHelper.js";
+import { Command } from "../command.js";
+import { Customization, ApiRestriction } from "../../constants.js";
+import { getBaseGuildTextChannel, getGuildMemberLocale } from "../../helpers/interactionHelper.js";
+import { getServerInfoFooter } from "../../helpers/formatHelper.js";
 
 const defaultCommandLocalization = getDefaultLocalization().games.roll;
 
