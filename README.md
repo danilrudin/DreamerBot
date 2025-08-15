@@ -1,4 +1,4 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Maslinin_DreamerBot&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Maslinin_DreamerBot) [![GitHub license](https://badgen.net/github/license/Maslinin/DreamerBot)](https://github.com/Maslinin/DreamerBot/blob/master/LICENSE)
+[![Build](https://github.com/danilrudin/DreamerBot/actions/workflows/build.yml/badge.svg)](https://github.com/danilrudin/DreamerBot/actions/workflows/build.yml)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Maslinin_DreamerBot&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Maslinin_DreamerBot) [![GitHub license](https://badgen.net/github/license/Maslinin/DreamerBot)](https://github.com/Maslinin/DreamerBot/blob/master/LICENSE)
 
 # DreamerBot
 A powerful Discord Bot. Music, management and more.
@@ -14,7 +14,6 @@ This project was created to provide a reliable platform for creating your own Di
 - Multi-language support thanks to [typesafe-i18n](https://www.npmjs.com/package/typesafe-i18n);
 - Built-in music playback capabilities thanks to [discord-player](https://www.npmjs.com/package/discord-player) and [discord-player-youtubei](https://www.npmjs.com/package/discord-player-youtubei);
 - Detailed logging with the ability to deeply configure logs thanks to [log4js](https://www.npmjs.com/package/log4js).
-- Adapted for bun - one of the fastest Node.js runtimes.
 
 ### Requirements
 - Node.js v22.15.* or higher
