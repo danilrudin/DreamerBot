@@ -1,12 +1,6 @@
 import { Client, GatewayIntentBits } from "discord.js";
-import ModuleCommandRegister from "./commands/registers/moduleCommandRegister";
-import { AppConfig } from "./config";
-import { logger } from "./loggers";
-import "./events";
-import "./extensions/discordClient";
-import VKMusicPlayer from "./music/vkMusicPlayer";
+import VKMusicPlayer from "./music/vkMusicPlayer.js";
 import ModuleCommandRegister from "./commands/registers/moduleCommandRegister.js";
-import YouTubeiPlayer from "./music/youTubeiDiscordPlayer.js";
 import { AppConfig } from "./config/index.js";
 import { logger } from "./loggers/index.js";
 import "./events/index.js";

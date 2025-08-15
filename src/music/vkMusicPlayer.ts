@@ -1,6 +1,6 @@
 import { Client } from 'discord.js';
 import { IMusicPlayerConfig } from '../config';
-import { DiscordPlayer } from './discordPlayer';
+import { DiscordPlayer } from './discordPlayer.js';
 import { VKMusicExtractor } from 'discord-player-vkmusic';
 
 export default class VKMusicPlayer extends DiscordPlayer {
