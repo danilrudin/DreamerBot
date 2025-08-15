@@ -12,8 +12,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0)
       discord-player-vkmusic:
-        specifier: ^1.0.0-rc.3
-        version: 1.0.0-rc.3(discord-player@7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0))
+        specifier: ^1.0.0
+        version: 1.0.0(discord-player@7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0))
       discord-player-youtubei:
         specifier: ^1.5.0
         version: 1.5.0
@@ -31,8 +31,8 @@ importers:
         version: 5.26.2(typescript@5.9.2)
     devDependencies:
       '@types/node':
-        specifier: ^24.2.1
-        version: 24.2.1
+        specifier: ^24.3.0
+        version: 24.3.0
       cpy-cli:
         specifier: ^6.0.0
         version: 6.0.0
@@ -437,8 +437,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/node@24.2.1':
-    resolution: {integrity: sha512-DRh5K+ka5eJic8CjH7td8QpYEV6Zo10gfRkjHCO3weqZHWDtAaSTFtl4+VMqOJ4N5jcuhZ9/l+yy8rVgw7BQeQ==}
+  '@types/node@24.3.0':
+    resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
 
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
@@ -592,11 +592,11 @@ packages:
   decimal.js@10.6.0:
     resolution: {integrity: sha512-YpgQiITW3JXGntzdUmyUR1V812Hn8T1YVXhCu+wO3OpS4eU9l4YdD3qjyiKdV6mvV29zapkMeD390UVEf2lkUg==}
 
-  discord-api-types@0.38.19:
-    resolution: {integrity: sha512-NUNMTgjYrgxt7wrTNEqnEez4hIAYbfyBpsjxT5gW7+82GjQCPDZvN+em6t+4/P5kGWnnwDa4ci070BV7eI6GbA==}
+  discord-api-types@0.38.20:
+    resolution: {integrity: sha512-wJSmFFi8eoFL/jIosUQLoXeCv7YK+l7joKmFCsnkx7HWSFt5xScNQdhvILLxC0oU6J5bK0ppR7GZ1d4NJScSNQ==}
 
-  discord-player-vkmusic@1.0.0-rc.3:
-    resolution: {integrity: sha512-C+jY/Xj8vvVm/XsEVUgacMrD9GLxKrCXgYOjFzn/tAnTN8awHV6W4rK1aloYHXZehiOnf02yuUzuJsr+yOrVlQ==}
+  discord-player-vkmusic@1.0.0:
+    resolution: {integrity: sha512-u3PjvjeToJ/kisG2EZjYdG0L4wy/aRhG16OsTcst0ONsjdWN0Nd3d2xsPKIoOUZU0iewuarlPJleTcHSfuRaMA==}
     engines: {node: '>=20.18.1'}
     peerDependencies:
       discord-player: ^7.1.0
@@ -671,8 +671,9 @@ packages:
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
-  fdir@6.4.6:
-    resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
       picomatch: ^3 || ^4
     peerDependenciesMeta:
@@ -1457,7 +1458,7 @@ snapshots:
       '@discordjs/formatters': 0.6.1
       '@discordjs/util': 1.1.1
       '@sapphire/shapeshift': 4.0.0
-      discord-api-types: 0.38.19
+      discord-api-types: 0.38.20
       fast-deep-equal: 3.1.3
       ts-mixer: 6.0.4
       tslib: 2.8.1
@@ -1468,7 +1469,7 @@ snapshots:
 
   '@discordjs/formatters@0.6.1':
     dependencies:
-      discord-api-types: 0.38.19
+      discord-api-types: 0.38.20
 
   '@discordjs/rest@2.5.1':
     dependencies:
@@ -1477,7 +1478,7 @@ snapshots:
       '@sapphire/async-queue': 1.5.5
       '@sapphire/snowflake': 3.5.3
       '@vladfrangu/async_event_emitter': 2.4.6
-      discord-api-types: 0.38.19
+      discord-api-types: 0.38.20
       magic-bytes.js: 1.12.1
       tslib: 2.8.1
       undici: 6.21.3
@@ -1492,7 +1493,7 @@ snapshots:
       '@sapphire/async-queue': 1.5.5
       '@types/ws': 8.18.1
       '@vladfrangu/async_event_emitter': 2.4.6
-      discord-api-types: 0.38.19
+      discord-api-types: 0.38.20
       tslib: 2.8.1
       ws: 8.18.3
     transitivePeerDependencies:
@@ -1692,13 +1693,13 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/node@24.2.1':
+  '@types/node@24.3.0':
     dependencies:
       undici-types: 7.10.0
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.2.1
+      '@types/node': 24.3.0
 
   '@vladfrangu/async_event_emitter@2.4.6': {}
 
@@ -1825,9 +1826,9 @@ snapshots:
 
   decimal.js@10.6.0: {}
 
-  discord-api-types@0.38.19: {}
+  discord-api-types@0.38.20: {}
 
-  discord-player-vkmusic@1.0.0-rc.3(discord-player@7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0)):
+  discord-player-vkmusic@1.0.0(discord-player@7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0)):
     dependencies:
       bottleneck: 2.19.5
       discord-player: 7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0)
@@ -1891,7 +1892,7 @@ snapshots:
       '@discordjs/util': 1.1.1
       '@discordjs/ws': 1.2.3
       '@sapphire/snowflake': 3.5.3
-      discord-api-types: 0.38.19
+      discord-api-types: 0.38.20
       fast-deep-equal: 3.1.3
       lodash.snakecase: 4.1.1
       magic-bytes.js: 1.12.1
@@ -1976,7 +1977,7 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  fdir@6.4.6(picomatch@4.0.3):
+  fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
 
@@ -2506,7 +2507,7 @@ snapshots:
 
   tinyglobby@0.2.14:
     dependencies:
-      fdir: 6.4.6(picomatch@4.0.3)
+      fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
 
   tldts-core@6.1.86: {}
