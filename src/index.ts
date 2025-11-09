@@ -1,10 +1,10 @@
 import { Client, GatewayIntentBits } from "discord.js";
-import VKMusicPlayer from "./music/vkMusicPlayer.js";
 import ModuleCommandRegister from "./commands/registers/moduleCommandRegister.js";
 import { AppConfig } from "./config/index.js";
 import { logger } from "./loggers/index.js";
 import "./events/index.js";
 import "./extensions/discordClient/index.js";
+import DefaultMusicPlayer from "./music/defaultMusicPlayer.js";
 
 try {
   const config = await AppConfig.get();
@@ -25,7 +25,7 @@ try {
     ],
   });
 
-  const musicPlayer = await new VKMusicPlayer(
+  const musicPlayer = await new DefaultMusicPlayer(
     client,
     config.player!
   ).loadExtractors();

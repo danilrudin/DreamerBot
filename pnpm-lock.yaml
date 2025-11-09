@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@discord-player/extractor':
+        specifier: ^7.1.0
+        version: 7.1.0
       discord-player:
         specifier: ^7.1.0
         version: 7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0)
-      discord-player-vkmusic:
-        specifier: ^1.0.0
-        version: 1.0.0(discord-player@7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0))
       discord-player-youtubei:
         specifier: ^1.5.0
         version: 1.5.0
@@ -495,9 +495,6 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
-  bottleneck@2.19.5:
-    resolution: {integrity: sha512-VHiNCbI1lKdl44tGrhNfU3lup0Tj/ZBMJB5/2ZbNXRCPuRCO7ed2mgcK4r17y+KB2EfuYuRaVlwNbAeaWGSpbw==}
-
   brace-expansion@2.0.2:
     resolution: {integrity: sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ==}
 
@@ -594,12 +591,6 @@ packages:
 
   discord-api-types@0.38.20:
     resolution: {integrity: sha512-wJSmFFi8eoFL/jIosUQLoXeCv7YK+l7joKmFCsnkx7HWSFt5xScNQdhvILLxC0oU6J5bK0ppR7GZ1d4NJScSNQ==}
-
-  discord-player-vkmusic@1.0.0:
-    resolution: {integrity: sha512-u3PjvjeToJ/kisG2EZjYdG0L4wy/aRhG16OsTcst0ONsjdWN0Nd3d2xsPKIoOUZU0iewuarlPJleTcHSfuRaMA==}
-    engines: {node: '>=20.18.1'}
-    peerDependencies:
-      discord-player: ^7.1.0
 
   discord-player-youtubei@1.5.0:
     resolution: {integrity: sha512-TYwYQ5cUpOxAffqa+AkM4XVEWFqe9DAFoNl91sHrA+LrvWgPNU5W9sA9P3UQGNqsFnu0Cf93dsQvXL73n+uX0w==}
@@ -1733,8 +1724,6 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  bottleneck@2.19.5: {}
-
   brace-expansion@2.0.2:
     dependencies:
       balanced-match: 1.0.2
@@ -1827,12 +1816,6 @@ snapshots:
   decimal.js@10.6.0: {}
 
   discord-api-types@0.38.20: {}
-
-  discord-player-vkmusic@1.0.0(discord-player@7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0)):
-    dependencies:
-      bottleneck: 2.19.5
-      discord-player: 7.1.0(@discord-player/extractor@7.1.0)(mediaplex@1.0.0)
-      undici: 7.13.0
 
   discord-player-youtubei@1.5.0:
     dependencies:
