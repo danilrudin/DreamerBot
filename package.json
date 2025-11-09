@@ -1,7 +1,7 @@
 {
   "name": "dreamerbot",
   "version": "0.0.1",
-  "description": "A powerful Discord Bot. Music, management and more.",
+  "description": "A solid foundation for building powerful Discord bots — clean, minimal, and extensible.",
   "type": "module",
   "main": "./dist/index.js",
   "exports": "./dist/index.js",

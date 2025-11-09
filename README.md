@@ -1,7 +1,7 @@
 [![Build](https://github.com/danilrudin/DreamerBot/actions/workflows/build.yml/badge.svg)](https://github.com/danilrudin/DreamerBot/actions/workflows/build.yml)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Maslinin_DreamerBot&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Maslinin_DreamerBot) [![GitHub license](https://badgen.net/github/license/Maslinin/DreamerBot)](https://github.com/Maslinin/DreamerBot/blob/master/LICENSE)
 
 # DreamerBot
-A powerful Discord Bot. Music, management and more.
+A solid foundation for building powerful Discord bots — clean, minimal, and extensible.
 
 ## Overview
 This project was created to provide a reliable platform for creating your own Discord bot. You are free to use, modify, and extend it under the terms of the MIT license. If you decide to use this repository as the basis for your bot, please put a star on this repository or fork it - it will help promote it and will be the best gratitude for me.
